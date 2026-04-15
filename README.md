@@ -17,7 +17,13 @@ cd ..
 catkin_make
 source devel/setup.bash
 
+chmod +x setup/run.sh
+cd panda_move_a_to_b/setup./run.sh  
 
+export ROBOT_IP=<robot-ip>
+roslaunch franka_control franka_control.launch robot_ip:=$ROBOT_IP
+roslaunch panda_move_a_to_b moveit.launch
+rosrun panda_move_a_to_b move_a_to_b.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 T1
 source /opt/ros/noetic/setup.bash
