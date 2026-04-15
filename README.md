@@ -30,3 +30,15 @@ catkin_make
 source devel/setup.bash
 
 rosrun my_panda_scripts move_panda.py
+
+
+panda_move_a_to_b/
+├── README.md
+├── scripts/
+│   └── move_a_to_b.py
+├── launch/
+│   └── moveit.launch
+├── setup/
+│   └── run.sh
+└── .gitignore
+
