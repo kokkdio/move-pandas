@@ -1,4 +1,24 @@
-# move-pandas
+# Panda Move A to B
+
+Simple ROS Noetic + MoveIt project to move a Franka Panda arm between two poses.
+
+## Requirements
+- Ubuntu 20.04 (Focal)
+- ROS Noetic
+- franka_ros
+- panda_moveit_config
+
+## Setup
+
+```bash
+cd ~/catkin_ws/src
+git clone <your-repo>
+cd ..
+catkin_make
+source devel/setup.bash
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 T1
 source /opt/ros/noetic/setup.bash
 source ~/catkin_ws/devel/setup.bash
